@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32106.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game", "Connect4Game.csproj", "{086296D7-5969-4D8E-8391-B2B72D63AD4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game_BusinessLogic", "Connect4Game\Connect4Game_BusinessLogic\Connect4Game_BusinessLogic.csproj", "{C1EBAC46-AC72-45F5-8AC0-C42FEC8BAC65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game_BusinessLogic_Contracts", "Connect4Game\Connect4Game_BusinessLogic_Contracts\Connect4Game_BusinessLogic_Contracts.csproj", "{0D07B901-8F75-40FE-95C3-D3849BA6A730}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game_RestAPI", "Connect4Game\Connect4Game_RestAPI\Connect4Game_RestAPI.csproj", "{42321B23-4F49-46D2-9B1E-E19FAB796653}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game_RestAPI_Contracts", "Connect4Game\Connect4Game_RestAPI_Contracts\Connect4Game_RestAPI_Contracts.csproj", "{57D9C280-6071-4B67-BF41-828ECCD9083D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Connect4Game_Tests", "Connect4Game\Connect4Game_Tests\Connect4Game_Tests.csproj", "{FC319A18-ADD5-42D9-ACBB-C89B6332A956}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{086296D7-5969-4D8E-8391-B2B72D63AD4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086296D7-5969-4D8E-8391-B2B72D63AD4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086296D7-5969-4D8E-8391-B2B72D63AD4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086296D7-5969-4D8E-8391-B2B72D63AD4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1EBAC46-AC72-45F5-8AC0-C42FEC8BAC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1EBAC46-AC72-45F5-8AC0-C42FEC8BAC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1EBAC46-AC72-45F5-8AC0-C42FEC8BAC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1EBAC46-AC72-45F5-8AC0-C42FEC8BAC65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D07B901-8F75-40FE-95C3-D3849BA6A730}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D07B901-8F75-40FE-95C3-D3849BA6A730}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D07B901-8F75-40FE-95C3-D3849BA6A730}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D07B901-8F75-40FE-95C3-D3849BA6A730}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42321B23-4F49-46D2-9B1E-E19FAB796653}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42321B23-4F49-46D2-9B1E-E19FAB796653}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42321B23-4F49-46D2-9B1E-E19FAB796653}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42321B23-4F49-46D2-9B1E-E19FAB796653}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57D9C280-6071-4B67-BF41-828ECCD9083D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57D9C280-6071-4B67-BF41-828ECCD9083D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57D9C280-6071-4B67-BF41-828ECCD9083D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57D9C280-6071-4B67-BF41-828ECCD9083D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC319A18-ADD5-42D9-ACBB-C89B6332A956}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC319A18-ADD5-42D9-ACBB-C89B6332A956}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC319A18-ADD5-42D9-ACBB-C89B6332A956}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC319A18-ADD5-42D9-ACBB-C89B6332A956}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8509BE5-8551-4533-9596-CCCE98C686A2}
+	EndGlobalSection
+EndGlobal
