@@ -12,4 +12,8 @@
     <Folder Include="Controllers\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Connect4Game_BusinessLogic\Connect4Game_BusinessLogic.csproj" />
+  </ItemGroup>
+
 </Project>
