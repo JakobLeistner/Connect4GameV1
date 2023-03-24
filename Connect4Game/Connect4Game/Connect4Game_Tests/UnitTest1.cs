@@ -1,3 +1,5 @@
+using Connect4Game_BusinessLogic;
+using Connect4Game_BusinessLogic_Contracts.Interfaces;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 
@@ -6,12 +8,14 @@ namespace Connect4Game_Tests
     [TestClass]
     public class UnitTest1
     {
+        Player Player;
         Game Game;
 
         [TestInitialize]
         public void Init()
         {
-            Game = new Game("", ""); // gameID, playerID
+            Player = new Player("12345", "Alexander Marcus", "Rosa");
+            Game = new Game("egal123", (IPlayer) Player); // gameID, playerID
         }
 
         // GetName(): string
