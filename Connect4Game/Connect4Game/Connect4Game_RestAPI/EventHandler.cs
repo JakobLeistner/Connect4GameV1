@@ -7,11 +7,12 @@ namespace Connect4Game_RestAPI
 {
     public class EventHandler
     {
+        private ConnectionService connectionService;
         public EventHandler(ConnectionService connectionService)
         {
-            //parameter connectionService nur hinzugefügt, weil startup.cs das scheinbar möchte
+            this.connectionService = connectionService;
         }
-        public void EventHandlerInitalize(string HubUrlOderSo)
+        public void EventHandlerInitalize(string eventHandlerHub)
         {
 
         }

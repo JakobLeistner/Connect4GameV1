@@ -82,17 +82,22 @@ namespace Connect4Game_BusinessLogic
             return true;
         }
 
+        private IPlayer GetPlayerFromPlayerIndex(int winner)
+        {
+            return (winner == 1) ? Player1 : Player2;
+        }
+
         public IPlayer GetWinner()
         {
             int[][] board;
             board = this.Board.Squares;
             bool win = false;
             // Überprüfen horizontal
-            for (int r = 0; r < 7; r++)
+            for (int r = 0; r < 6; r++)
             {
                 for (int c = 0; c <= 3; c++)
                 {
-                    int player = board[c][r];
+                    int player = board[r][c];
                     if (player == 0)
                     {
                         continue;
@@ -101,7 +106,7 @@ namespace Connect4Game_BusinessLogic
                     win = true;
                     for (int i = 1; i < 4; i++)
                     {
-                        if (board[c + i][r] != player)
+                        if (board[r][c + i] != player)
                         {
                             win = false;
                             break;
@@ -110,16 +115,16 @@ namespace Connect4Game_BusinessLogic
 
                     if (win)
                     {
-                        return CurrentPlayer;
+                        return GetPlayerFromPlayerIndex(player);
                     }
                 }
             }
-            //Überprüfen vertikal
+            // Überprüfen vertikal
             for (int c = 0; c < 7; c++)
             {
                 for (int r = 0; r <= 2; r++)
                 {
-                    int player = board[c][r];
+                    int player = board[r][c];
                     if (player == 0)
                     {
                         continue;
@@ -128,7 +133,7 @@ namespace Connect4Game_BusinessLogic
                     win = true;
                     for (int i = 1; i < 4; i++)
                     {
-                        if (board[c][r + i] != player)
+                        if (board[r + i][c] != player)
                         {
                             win = false;
                             break;
@@ -137,16 +142,16 @@ namespace Connect4Game_BusinessLogic
 
                     if (win)
                     {
-                        return CurrentPlayer;
+                        return GetPlayerFromPlayerIndex(player);
                     }
                 }
             }
-            //Überprüfen diagonal "\"
+            // Überprüfen diagonal "\"
             for (int c = 0; c <= 3; c++)
             {
                 for (int r = 0; r <= 2; r++)
                 {
-                    int player = board[c][r];
+                    int player = board[r][c];
                     if (player == 0)
                     {
                         continue;
@@ -155,7 +160,7 @@ namespace Connect4Game_BusinessLogic
                     win = true;
                     for (int i = 1; i < 4; i++)
                     {
-                        if (board[c + i][r + i] != player)
+                        if (board[r + i][c + i] != player)
                         {
                             win = false;
                             break;
@@ -164,16 +169,16 @@ namespace Connect4Game_BusinessLogic
 
                     if (win)
                     {
-                        return CurrentPlayer;
+                        return GetPlayerFromPlayerIndex(player);
                     }
                 }
             }
-            //Überprüfen diagonal "/"
+            // Überprüfen diagonal "/"
             for (int c = 7 - 1; c >= 4 - 1; c--)
             {
                 for (int r = 0; r <= 2; r++)
                 {
-                    int player = board[c][r];
+                    int player = board[r][c];
                     if (player == 0)
                     {
                         continue;
@@ -182,7 +187,7 @@ namespace Connect4Game_BusinessLogic
                     win = true;
                     for (int i = 1; i < 4; i++)
                     {
-                        if (board[c - i][r + i] != player)
+                        if (board[r + i][c - i] != player)
                         {
                             win = false;
                             break;
@@ -191,7 +196,7 @@ namespace Connect4Game_BusinessLogic
 
                     if (win)
                     {
-                        return CurrentPlayer;
+                        return GetPlayerFromPlayerIndex(player);
                     }
                 }
             }

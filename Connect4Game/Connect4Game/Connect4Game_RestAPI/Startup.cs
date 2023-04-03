@@ -30,9 +30,9 @@ namespace Connect4Game_RestAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            ConnectionService connectionService = new();
+            ConnectionService connectionService = new ConnectionService();
             services.AddSingleton(connectionService);
-            RequestController requestController = new();
+            RequestController requestController = new RequestController();
             EventHandler eventHandler = new(connectionService);
             requestController.OnGameStarted += eventHandler.OnGameStarted;
             requestController.OnWaitingListUpdated += eventHandler.OnWaitingListUpdated;
